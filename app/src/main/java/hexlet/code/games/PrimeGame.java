@@ -12,7 +12,7 @@ public class PrimeGame {
         String playerName = Cli.playerName;
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
         while (Engine.score != Engine.COUNT_ROUNDS) {
-            String correctAnswer = "";
+            String correctAnswer;
             Random random = new Random();
             int number = random.nextInt(100) + 1;
             if (Utils.isPrime(number)) {
