@@ -36,7 +36,7 @@ public class Engine {
         return score;
     }
 
-    public static void setScore(int score) {
-        Engine.score = score;
+    public static void setScore(final int  newScore) {
+        Engine.score = newScore;
     }
 }
