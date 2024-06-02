@@ -11,7 +11,7 @@ public class PrimeGame {
     private static final int MAX_RANDOM_NUMBER = 100;
 
     public static void runGame() {
-        Engine.setScore(9);
+        Engine.setScore(0);
         while (Engine.getScore() != Engine.COUNT_ROUNDS) {
             int number = RANDOM.nextInt(MAX_RANDOM_NUMBER) + 1;
             String correctAnswer;
