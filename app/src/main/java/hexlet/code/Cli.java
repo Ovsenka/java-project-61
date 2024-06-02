@@ -19,8 +19,4 @@ public class Cli {
     public static String getPlayerName() {
         return playerName;
     }
-
-    public static void setPlayerName(String playerName) {
-        Cli.playerName = playerName;
-    }
 }
