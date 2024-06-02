@@ -5,13 +5,16 @@ import java.util.Random;
 
 public class ProgressionGame {
     private static final Random RANDOM = new Random();
+    private static final int MAX_LEN_PROGRESSION = 10;
+    private static final int MAX_INIT_VALUE = 25;
+    private static final int MAX_D_VALUE = 15;
     public static void runGame() {
-        Engine.score = 0;
-        while (Engine.score != Engine.COUNT_ROUNDS) {
+        Engine.setScore(0);
+        while (Engine.getScore() != Engine.COUNT_ROUNDS) {
             StringBuilder progression = new StringBuilder();
-            int d = RANDOM.nextInt(10) + 1;
-            int value = RANDOM.nextInt(25) + 1;
-            int lengthProgression = RANDOM.nextInt(8) + 5;
+            int d = RANDOM.nextInt(MAX_D_VALUE) + 1;
+            int value = RANDOM.nextInt(MAX_INIT_VALUE) + 1;
+            int lengthProgression = RANDOM.nextInt(MAX_LEN_PROGRESSION) + 1;
             int position = RANDOM.nextInt(lengthProgression);
             String correctAnswer = "";
             for (int i = 0; i < lengthProgression; i++) {

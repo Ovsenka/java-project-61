@@ -6,11 +6,13 @@ import java.util.Random;
 
 public class GcdGame {
     private static final Random RANDOM = new Random();
+
+    private static final int MAX_RAND_NUMBER = 200;
     public static void runGame() {
-        Engine.score = 0;
-        while (Engine.score != Engine.COUNT_ROUNDS) {
-            int num1 = RANDOM.nextInt(200);
-            int num2 = RANDOM.nextInt(200);
+        Engine.setScore(0);
+        while (Engine.getScore() != Engine.COUNT_ROUNDS) {
+            int num1 = RANDOM.nextInt(MAX_RAND_NUMBER);
+            int num2 = RANDOM.nextInt(MAX_RAND_NUMBER);
             int correctAnswer;
             String question = num1 + " " + num2;
             correctAnswer = Utils.getGcd(num1, num2);

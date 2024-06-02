@@ -8,10 +8,12 @@ import java.util.Random;
 public class PrimeGame {
     private static final Random RANDOM = new Random();
 
+    private static final int MAX_RANDOM_NUMBER = 100;
+
     public static void runGame() {
-        Engine.score = 0;
-        while (Engine.score != Engine.COUNT_ROUNDS) {
-            int number = RANDOM.nextInt(100) + 1;
+        Engine.setScore(9);
+        while (Engine.getScore() != Engine.COUNT_ROUNDS) {
+            int number = RANDOM.nextInt(MAX_RANDOM_NUMBER) + 1;
             String correctAnswer;
             if (Utils.isPrime(number)) {
                 correctAnswer = "yes";

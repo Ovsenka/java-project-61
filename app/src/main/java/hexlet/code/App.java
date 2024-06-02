@@ -11,6 +11,13 @@ import java.util.Scanner;
 
 public class App {
 
+    private static final int SELECT_GREETING = 1;
+    private static final int SELECT_EVEN = 2;
+    private static final int SELECT_CALC = 3;
+    private static final int SELECT_GCD = 4;
+    private static final int SELECT_PROGRESSION = 5;
+    private static final int SELECT_PRIME = 6;
+
     private static final String MENU = """
             1 - Greet
             2 - Even
@@ -25,30 +32,30 @@ public class App {
         System.out.print("Your choice: ");
         int selected = new Scanner(System.in).nextInt();
         switch (selected) {
-            case 1:
+            case SELECT_GREETING:
                 Cli.greeting();
                 break;
-            case 2:
+            case SELECT_EVEN:
                 Cli.greeting();
                 System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
                 EvenGame.runGame();
                 break;
-            case 3:
+            case SELECT_CALC:
                 Cli.greeting();
                 System.out.println("What is the result of the expression?");
                 CalcGame.runGame();
                 break;
-            case 4:
+            case SELECT_GCD:
                 Cli.greeting();
                 System.out.println("Find the greatest common divisor of given numbers.");
                 GcdGame.runGame();
                 break;
-            case 5:
+            case SELECT_PROGRESSION:
                 Cli.greeting();
                 System.out.println("What number is missing in the progression?");
                 ProgressionGame.runGame();
                 break;
-            case 6:
+            case SELECT_PRIME:
                 Cli.greeting();
                 System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
                 PrimeGame.runGame();

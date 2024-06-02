@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Engine {
     public static final int COUNT_ROUNDS = 3;
 
-    public static int score = 0;
+    private static int score = 0;
 
     public static boolean startRound(String question, String correctAnswer) {
         askQuestion(question);
@@ -14,12 +14,12 @@ public class Engine {
             System.out.println("Correct!");
             Engine.score++;
             if (Engine.score == Engine.COUNT_ROUNDS) {
-                System.out.println("You win! Congratulations, " + Cli.playerName + "!");
+                System.out.println("You win! Congratulations, " + Cli.getPlayerName() + "!");
             }
             return true;
         }
         System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + correctAnswer + "'.");
-        System.out.println("Let's try again, " + Cli.playerName + "!");
+        System.out.println("Let's try again, " + Cli.getPlayerName() + "!");
         return false;
     }
 
@@ -30,5 +30,13 @@ public class Engine {
     private static String getAnswer() {
         System.out.print("Your answer: ");
         return new Scanner(System.in).next();
+    }
+
+    public static int getScore() {
+        return score;
+    }
+
+    public static void setScore(int score) {
+        Engine.score = score;
     }
 }
