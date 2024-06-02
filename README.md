@@ -14,3 +14,6 @@
 
 #### Progression Game demo
 [![asciicast](https://asciinema.org/a/hm6mZDRvgg9GaT10C5Fw7B0CH.svg)](https://asciinema.org/a/hm6mZDRvgg9GaT10C5Fw7B0CH)
+
+#### Prime Game demo
+[![asciicast](https://asciinema.org/a/7vNM7cWG9PT6sJxNvbGk8qHge.svg)](https://asciinema.org/a/7vNM7cWG9PT6sJxNvbGk8qHge)
