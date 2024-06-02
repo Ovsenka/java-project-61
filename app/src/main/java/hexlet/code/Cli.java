@@ -6,7 +6,7 @@ public class Cli {
     public static String playerName = "";
     private static void askPlayerName() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("May i have your name? ");
+        System.out.print("May I have your name? ");
         playerName = scanner.next();
     }
 

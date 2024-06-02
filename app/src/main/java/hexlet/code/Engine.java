@@ -12,11 +12,15 @@ public class Engine {
         String answer = getAnswer();
         if (correctAnswer.equals(answer)) {
             System.out.println("Correct!");
+            Engine.score++;
+            if (Engine.score == Engine.COUNT_ROUNDS) {
+                System.out.println("You win! Congratulations, " + Cli.playerName + "!");
+            }
             return true;
-        } else {
-            System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + correctAnswer + "'.");
-            return false;
         }
+        System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + correctAnswer + "'.");
+        System.out.println("Let's try again, " + Cli.playerName + "!");
+        return false;
     }
 
     private static void askQuestion(String question) {

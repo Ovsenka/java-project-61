@@ -30,22 +30,27 @@ public class App {
                 break;
             case 2:
                 Cli.greeting();
+                System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
                 EvenGame.runGame();
                 break;
             case 3:
                 Cli.greeting();
+                System.out.println("What is the result of the expression?");
                 CalcGame.runGame();
                 break;
             case 4:
                 Cli.greeting();
+                System.out.println("Find the greatest common divisor of given numbers.");
                 GcdGame.runGame();
                 break;
             case 5:
                 Cli.greeting();
+                System.out.println("What number is missing in the progression?");
                 ProgressionGame.runGame();
                 break;
             case 6:
                 Cli.greeting();
+                System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
                 PrimeGame.runGame();
                 break;
             default:
