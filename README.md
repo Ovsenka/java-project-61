@@ -8,3 +8,6 @@
 
 #### CalcGame Demo:
 [![asciicast](https://asciinema.org/a/VsSfgXVyuOh7DH2tQbd20iuud.svg)](https://asciinema.org/a/VsSfgXVyuOh7DH2tQbd20iuud)
+
+#### GCD Game demo
+[![asciicast](https://asciinema.org/a/xO49GUl9n5v6Iyzw01dPmhamk.svg)](https://asciinema.org/a/xO49GUl9n5v6Iyzw01dPmhamk)

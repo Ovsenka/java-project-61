@@ -3,7 +3,7 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-    public static final int countRounds = 3;
+    public static final int COUNT_ROUNDS = 3;
 
     public static int score = 0;
 
@@ -13,8 +13,7 @@ public class Engine {
         if (correctAnswer.equals(answer)) {
             System.out.println("Correct!");
             return true;
-        }
-        else {
+        } else {
             System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + correctAnswer + "'.");
             return false;
         }

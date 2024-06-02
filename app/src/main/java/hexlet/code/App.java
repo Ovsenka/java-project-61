@@ -2,18 +2,21 @@ package hexlet.code;
 
 import hexlet.code.games.CalcGame;
 import hexlet.code.games.EvenGame;
+import hexlet.code.games.GcdGame;
 
 import java.util.Scanner;
 
 public class App {
 
-    private final static String menu = "1 - Greet\n" +
-            "2 - Even\n" +
-            "3 - Calc\n" +
-            "0 - Exit";
+    private static final String MENU = """
+            1 - Greet
+            2 - Even
+            3 - Calc
+            4 - GCD
+            0 - Exit""";
     public static void main(String[] args) {
         System.out.println("Please enter the game number and press Enter.");
-        System.out.println(menu);
+        System.out.println(MENU);
         System.out.print("Your choice: ");
         int selected = new Scanner(System.in).nextInt();
         switch (selected) {
@@ -27,6 +30,11 @@ public class App {
             case 3:
                 Cli.greeting();
                 CalcGame.runGame();
+                break;
+            case 4:
+                Cli.greeting();
+                GcdGame.runGame();
+            default:
                 break;
         }
 
